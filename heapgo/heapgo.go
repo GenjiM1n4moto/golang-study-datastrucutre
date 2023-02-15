@@ -4,7 +4,7 @@ import (
 	"sort"
 )
 
-// 小根堆
+// 小根堆, 小根还是大根由Less 控制, < 是小根, 大于是大根
 type heapInterface interface {
 	sort.Interface // Swap, Len, Less
 	Push(x any)
